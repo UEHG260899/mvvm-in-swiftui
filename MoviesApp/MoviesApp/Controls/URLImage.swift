@@ -13,7 +13,7 @@ struct URLImage: View {
     let url: String
     let placeholder: String
     
-    @StateObject var imageLoader = ImageLoader()
+    @ObservedObject var imageLoader = ImageLoader()
     
     init(url: String, placeholder: String = "placeholder") {
         self.url = url
