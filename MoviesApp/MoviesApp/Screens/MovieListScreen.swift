@@ -10,7 +10,6 @@ import SwiftUI
 struct MovieListScreen: View {
     
     @ObservedObject private var viewModel: MovieListViewModel
-    @State var searchQuery = ""
     
     init() {
         self.viewModel = MovieListViewModel()
@@ -20,11 +19,11 @@ struct MovieListScreen: View {
         NavigationView {
             VStack {
                 
-                TextField("Search", text: $searchQuery)
+                TextField("Search", text: $viewModel.searchQuery)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal)
                     .onSubmit {
-                        self.viewModel.searchByName(self.searchQuery)
+                        self.viewModel.searchByName(self.viewModel.searchQuery)
                     }
                 
                 Spacer()

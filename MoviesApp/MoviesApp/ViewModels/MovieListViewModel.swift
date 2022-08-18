@@ -11,6 +11,7 @@ import Foundation
 class MovieListViewModel: ViewModelBase {
 
     @Published var movies = [MovieViewModel]()
+    @Published var searchQuery = ""
     let httpClient = HTTPClient()
     
     func searchByName(_ name: String) {
