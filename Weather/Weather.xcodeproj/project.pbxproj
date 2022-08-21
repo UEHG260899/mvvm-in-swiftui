@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A4D211AA28B19DD40020AA13 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211A928B19DD40020AA13 /* WeatherApp.swift */; };
-		A4D211AC28B19DD40020AA13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211AB28B19DD40020AA13 /* ContentView.swift */; };
 		A4D211AE28B19DD40020AA13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D211AD28B19DD40020AA13 /* Assets.xcassets */; };
 		A4D211B128B19DD40020AA13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D211B028B19DD40020AA13 /* Preview Assets.xcassets */; };
 		A4D211C228B19E820020AA13 /* WeatherListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211BF28B19E820020AA13 /* WeatherListScreen.swift */; };
@@ -20,12 +19,14 @@
 		A4D211CC28B19EAC0020AA13 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211CB28B19EAC0020AA13 /* Weather.swift */; };
 		A4D211CE28B19EB30020AA13 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211CD28B19EB30020AA13 /* Webservice.swift */; };
 		A4D211D028B19EBA0020AA13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211CF28B19EBA0020AA13 /* Constants.swift */; };
+		A4D211D228B1A4060020AA13 /* AddWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211D128B1A4060020AA13 /* AddWeatherViewModel.swift */; };
+		A4D211D428B1A4BE0020AA13 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211D328B1A4BE0020AA13 /* WeatherViewModel.swift */; };
+		A4D211D628B1A7FC0020AA13 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D211D528B1A7FC0020AA13 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4D211A628B19DD40020AA13 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D211A928B19DD40020AA13 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
-		A4D211AB28B19DD40020AA13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4D211AD28B19DD40020AA13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D211B028B19DD40020AA13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4D211BF28B19E820020AA13 /* WeatherListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListScreen.swift; sourceTree = "<group>"; };
@@ -37,6 +38,9 @@
 		A4D211CB28B19EAC0020AA13 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A4D211CD28B19EB30020AA13 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		A4D211CF28B19EBA0020AA13 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4D211D128B1A4060020AA13 /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
+		A4D211D328B1A4BE0020AA13 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		A4D211D528B1A7FC0020AA13 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +80,8 @@
 				A4D211BA28B19E020020AA13 /* Services */,
 				A4D211B928B19DFA0020AA13 /* Models */,
 				A4D211B828B19DF00020AA13 /* Extensions */,
-				A4D211B728B19DEA0020AA13 /* Scenes */,
+				A4D211B728B19DEA0020AA13 /* Screens */,
 				A4D211A928B19DD40020AA13 /* WeatherApp.swift */,
-				A4D211AB28B19DD40020AA13 /* ContentView.swift */,
 				A4D211AD28B19DD40020AA13 /* Assets.xcassets */,
 				A4D211AF28B19DD40020AA13 /* Preview Content */,
 			);
@@ -93,14 +96,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A4D211B728B19DEA0020AA13 /* Scenes */ = {
+		A4D211B728B19DEA0020AA13 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				A4D211C028B19E820020AA13 /* AddCityScreen.swift */,
 				A4D211C128B19E820020AA13 /* SettingsScreen.swift */,
 				A4D211BF28B19E820020AA13 /* WeatherListScreen.swift */,
 			);
-			path = Scenes;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		A4D211B828B19DF00020AA13 /* Extensions */ = {
@@ -140,6 +143,8 @@
 		A4D211BC28B19E110020AA13 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				A4D211D128B1A4060020AA13 /* AddWeatherViewModel.swift */,
+				A4D211D328B1A4BE0020AA13 /* WeatherViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		A4D211BD28B19E1B0020AA13 /* Globarl State */ = {
 			isa = PBXGroup;
 			children = (
+				A4D211D528B1A7FC0020AA13 /* Store.swift */,
 			);
 			path = "Globarl State";
 			sourceTree = "<group>";
@@ -229,11 +235,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D211C328B19E820020AA13 /* AddCityScreen.swift in Sources */,
+				A4D211D428B1A4BE0020AA13 /* WeatherViewModel.swift in Sources */,
+				A4D211D228B1A4060020AA13 /* AddWeatherViewModel.swift in Sources */,
 				A4D211D028B19EBA0020AA13 /* Constants.swift in Sources */,
 				A4D211C928B19E920020AA13 /* String+Extensions.swift in Sources */,
 				A4D211CA28B19E920020AA13 /* UserDefaults+Extensions.swift in Sources */,
-				A4D211AC28B19DD40020AA13 /* ContentView.swift in Sources */,
 				A4D211CC28B19EAC0020AA13 /* Weather.swift in Sources */,
+				A4D211D628B1A7FC0020AA13 /* Store.swift in Sources */,
 				A4D211AA28B19DD40020AA13 /* WeatherApp.swift in Sources */,
 				A4D211C428B19E820020AA13 /* SettingsScreen.swift in Sources */,
 				A4D211C228B19E820020AA13 /* WeatherListScreen.swift in Sources */,
